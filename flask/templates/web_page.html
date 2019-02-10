@@ -1,0 +1,61 @@
+
+
+<style>
+
+p {
+  text-align: left;
+  size: 20px
+}
+h2 {
+  text-align: center;
+}
+
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  size: 30px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  size: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  size: 30px;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  size: 30px;
+}
+
+</style>
+<html>
+<head>
+	<h2>The Probability Results</h2>
+</head>
+
+<img src="{{url_for('static', filename='profit.png')}}" alt="Trulli" width="800" height="500">
+<body>
+<p>The probability that Bangladesh would be a good option for the client based on his/her information and specifications is: {{Bangladesh}} </p>
+<p>The probability that Philippines would be a good option for the client based on his/her information and specifications is: {{Philippines}} </p>
+<p>The probability that Srilanka would be a good option for the client based on his/her information and specifications is: {{Srilanka}} </p>
+
+</body>
+</html>
